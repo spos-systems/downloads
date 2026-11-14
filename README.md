@@ -2,27 +2,40 @@
 
 مستودع التوزيع الرسمي — كل حزم المنصات تُنشر هنا وتُقدَّم تلقائياً عبر قنوات التحديث في التطبيق.
 
-## الروابط الدائمة (آخر ريليز كامل — v1.17.100)
+## الروابط الدائمة (آخر ريليز كامل — v1.17.105)
 
 | المنصة | الرابط |
 | --- | --- |
-| ويندوز (المُطلِق) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Setup.exe |
+| ويندوز (المثبّت الكامل NSIS) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Setup.exe |
 | ويندوز (حزمة x64) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Windows-x64.zip |
 | لينكس (المثبّت الخفيف) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Setup-linux-x64.run |
 | لينكس (المثبّت الكامل دون اتصال) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Setup-Offline-linux-x64.run |
 | لينكس (حزمة x64) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Linux-x64.zip |
 | أندرويد (APK) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Android.apk |
 
-## v1.17.100 — الريليز الكامل (latest): إقلاع فوري بلا انتظار الشبكة
+## v1.17.105 — الريليز الكامل (latest): دفع الاشتراك برمز QR من الهاتف + اشتراك الهاتف بمعايير Play المدققة
 
-**التطبيق لم يعد ينتظر الإنترنت ليفتح** — كان إقلاع التطبيق ينتظر نداءً سحابياً بلا مهلة (وهو فحص لوحة مالك المنصّة لا يعني الكاشير أصلاً)، فمع واي فاي ضعيف يعلّق النداء وتظهر شاشة «تعذر الاتصال بالخدمة السحابية» وزر إعادة المحاولة، بينما إغلاق الواي فاي كلياً كان يدخل طبيعياً. من الآن:
+**دفع الاشتراك صار من هاتفك وأنت على الكمبيوتر** — بعد اختيار الباقة والمتابعة للدفع على الكمبيوتر لا يُطلب إرفاق وصل إطلاقاً (الوصل من تطبيق مصرفي على الهاتف أصلاً): يظهر رمز QR حي من الخادم يمسحه المستخدم بكاميرا هاتفه فتفتح صفحة دفع بهوية المنظومة بالضبط — المبلغ، بيانات الحوالة بأزرار نسخ، مرجع الحوالة، رفع الوصل من الكاميرا أو المعرض، الإرسال — وشاشة الكمبيوتر تنقلب تلقائياً لبطاقة «وصل طلبك — قيد المراجعة» فور الإرسال (استطلاع كل 4 ثوانٍ). رمز لمرة واحدة بصلاحية 24 ساعة ولا دخول مطلوباً على هاتف الدافئ. وفي الهاتف:
 
-- نافذة الدخول تفتح فور اكتمال التهيئة المحلية مهما كانت حالة الشبكة.
-- مهلة افتراضية 20 ثانية لكل نداء سحابي — وزر «دخول» فاشل الشبكة يسقط خلال 12 ثانية لمسار الدخول بلا إنترنت (بيانات آخر دخول ناجح).
-- عودة الإنترنت تجدد الجلسة والترخيص المحلي خلال ثوانٍ تلقائياً — النظام يعمل بلا إنترنت ثم يزامن.
-- التخزين المحلي الذكي للترخيص (لقطة اشتراك + فترة سماح) كان موجوداً — الخلل كان في بوابة الإقلاع فقط.
+- صفحة الاشتراك بنص إخباري حيادي واحد بلا زر ولا وصلة: «الشراء والتجديد — من موقع المنظومة أو تطبيق الكمبيوتر» — على التحقق الرسمي من سياسة Play (الدفع والتشجيع عليه حصراً هو الممنوع، أما إدارة الاشتراك فمسموحة صراحة) عادت إدارة الاشتراك كاملة: بطاقة «فتراتي» (تثبيت/تشغيل مجدولة/عودة للتلقائي) وبطاقة «طلبك قيد المراجعة» بحالتها وتواريخها.
+- شاشات الإيقاف عادت فيها أزرار الدعم بصياغة دعم خالص «فريق الدعم جاهز للمساعدة» على كل المنصات، وقنوات الدعم أقرب في نافذة التجديد وتبويب الإعدادات.
+- خطة ب الآمنة: إن تعذر تجهيز الرمز (خادم لم يُحدّث بعد) تظهر الواجهة الكلاسيكية بدل طريق مسدود — والهاتف والشاشات الضيقة تبقى على الرفع المباشر كما كان.
+- حركات إغلاق النوافذ سلسة الآن في كل مكان (المحلية والسحابية معاً) — غلاف الحوارات يدير طور الخروج مركزياً.
 
-يشمل الإصدار أيضاً إصلاحات التجربة الخمسة من v1.17.99 (كومبوهات طباعة مصممة + بطاقات طابعات جديدة + كلمة المرور لا تبقى في صفحة الدخول + بلا زر مشاركة + شريط التنقل بضغط الزر حصراً).
+- سجل التغيير الكامل: https://github.com/spos-systems/downloads/releases/tag/v1.17.105
+- أندرويد (APK — versionCode 107): https://github.com/spos-systems/downloads/releases/download/v1.17.105/SPOS-Solah-Cloud-Android-v1.17.105.apk
+- أندرويد (Play Store AAB): https://github.com/spos-systems/downloads/releases/download/v1.17.105/SPOS-Solah-Cloud-Android-v1.17.105-PLAY-UPLOAD.aab
+- أندرويد (خريطة R8 للتشويش): https://github.com/spos-systems/downloads/releases/download/v1.17.105/SPOS-Solah-Cloud-Android-v1.17.105-mapping.txt.gz
+- ويندوز (حزمة x64): https://github.com/spos-systems/downloads/releases/download/v1.17.105/SPOS-Solah-Cloud-Windows-x64-v1.17.105.zip
+- ويندوز (المثبّت الكامل NSIS): https://github.com/spos-systems/downloads/releases/download/v1.17.105/SPOS-Solah-Cloud-Windows-Setup-x64-v1.17.105.exe
+- لينكس (AppImage): https://github.com/spos-systems/downloads/releases/download/v1.17.105/SPOS-Solah-Cloud-Linux-x64-v1.17.105.AppImage
+- لينكس (deb): https://github.com/spos-systems/downloads/releases/download/v1.17.105/SPOS-Solah-Cloud-Linux-x64-v1.17.105.deb
+- لينكس (المثبّتان الرسوسيان): https://github.com/spos-systems/downloads/releases/download/v1.17.105/SPOS-Solah-Cloud-Setup-linux-x64-v1.17.105.run · https://github.com/spos-systems/downloads/releases/download/v1.17.105/SPOS-Solah-Cloud-Setup-Offline-linux-x64-v1.17.105.run
+- البصمات: [SHA256SUMS.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.105/SHA256SUMS.txt) · [SHA256SUMS-Linux.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.105/SHA256SUMS-Linux.txt) · [SHA256SUMS-Android.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.105/SHA256SUMS-Android.txt)
+
+## v1.17.100 — سابقاً: إقلاع فوري بلا انتظار الشبكة
+
+**التطبيق لم يعد ينتظر الإنترنت ليفتح** — كان إقلاع التطبيق ينتظر نداءً سحابياً بلا مهلة (وهو فحص لوحة مالك المنصّة لا يعني الكاشير أصلاً)، فمع واي فاي ضعيف يعلّق النداء وتظهر شاشة «تعذر الاتصال بالخدمة السحابية» وزر إعادة المحاولة. من الآن: نافذة الدخول تفتح فور اكتمال التهيئة المحلية مهما كانت حالة الشبكة، ومهلة 20 ثانية لكل نداء سحابي، وعودة الإنترنت تجدد الجلسة والترخيص خلال ثوانٍ تلقائياً. يشمل أيضاً إصلاحات التجربة الخمسة من v1.17.99 (كومبوهات طباعة مصممة + بطاقات طابعات جديدة + كلمة المرور لا تبقى في صفحة الدخول + بلا زر مشاركة + شريط التنقل بضغط الزر حصراً).
 
 - سجل التغيير الكامل: https://github.com/spos-systems/downloads/releases/tag/v1.17.100
 - أندرويد (APK — versionCode 102): https://github.com/spos-systems/downloads/releases/download/v1.17.100/SPOS-Solah-Cloud-Android-v1.17.100.apk
@@ -76,4 +89,4 @@ sha256sum -c SHA256SUMS-Android.txt    # أندرويد
 certutil -hashfile SPOS-Solah-Cloud-Windows-x64.zip SHA256   # ويندوز
 ```
 
-> **ملاحظة الخادم (للمالك):** لا تغييرات خادمية في v1.17.100 — كل الإصلاحات في التطبيقات ولا حاجة لأي سحب ولا ترحيلات قاعدة. (v1.17.96 السابق: تفعيل الرفض الخادمي للقفل الدائم وتحذيرات التدقيق [T333] يتطلب سحب main وإعادة بناء حاوية الخادم في `pos-cloud-platform`.)
+> **ملاحظة الخادم (للمالك):** ⚠️ v1.17.105 يمس **الخادم نفسه** — مسارات QR الجديدة (إنشاء الجلسة/قراءتها/إرسال الطلب) + هجرة Prisma لجدول `BillingQrSessions` + صفحة الدفع `/pay`: **أعد نشر حاوية الخادم (Docker) من main في `pos-cloud-platform` بهذا الإصدار** ليعمل تدفق QR — حتى ذلك الحين تعمل الواجهة الكلاسيكية على الكمبيوتر بخطة ب الآمنة. (v1.17.100 السابق: لا تغييرات خادمية — كل الإصلاحات في التطبيقات.)
