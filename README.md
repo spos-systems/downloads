@@ -6,7 +6,7 @@
 
 | المنصة | الرابط |
 | --- | --- |
-| ويندوز (المثبّت الكامل NSIS) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Setup.exe |
+| ويندوز (المُطلِق الخفيف) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Setup.exe |
 | ويندوز (حزمة x64) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Windows-x64.zip |
 | لينكس (المثبّت الخفيف) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Setup-linux-x64.run |
 | لينكس (المثبّت الكامل دون اتصال) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Setup-Offline-linux-x64.run |
