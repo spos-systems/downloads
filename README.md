@@ -2,7 +2,7 @@
 
 مستودع التوزيع الرسمي — كل حزم المنصات تُنشر هنا وتُقدَّم تلقائياً عبر قنوات التحديث في التطبيق.
 
-## الروابط الدائمة (آخر ريليز كامل — v1.17.106)
+## الروابط الدائمة (آخر ريليز كامل — v1.17.107)
 
 | المنصة | الرابط |
 | --- | --- |
@@ -13,7 +13,26 @@
 | لينكس (حزمة x64) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Linux-x64.zip |
 | أندرويد (APK) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Android.apk |
 
-## v1.17.106 — الريليز الكامل (latest): إغلاق ثغرة دخول المنتهي اشتراكه + تحليلات التفعيل للمالك + إصلاح فيضان QR
+## v1.17.107 — الريليز الكامل (latest): هوية النشاط من لوحة المالك تصل إعدادات الزبون وفواتيره
+
+**ما تراه في لوحتك هو ما يراه زبونك** — تعديل بيانات النشاط من لوحة المالك (الاسم/الهاتف/المدينة) كان يلامس سجل المالك الداخلي وحده ولا يصل أجهزة الزبون أبداً: التطبيق يقرأ هويته من جدول الإعدادات المُزامَنة وحقول الهوية مقفولة في واجهته أصلاً («التعديل عبر الدعم فقط») — فكان الهاتف في تبويب «النشاط» وعلى رأس الفواتير يظهر برقم المطور الافتراضي لكل زبون لم يحفظ هوية يوماً (والحفظ مقفول أصلاً). من الآن:
+
+- **حفظ التعديل من اللوحة ينشر الهوية لكل أجهزة الزبون خلال أول سحبة (30 ثانية)** فتظهر في تبويب «النشاط» بالإعدادات وعلى رأس كل فاتورة مطبوعة — على الهاتف والكمبيوتر معاً.
+- **الجلسة تحمل الهوية كاملة**: لحظة الدخول أو عودة التطبيق تظهر البيانات الجديدة فوراً، وسطر «هاتف:» لن يُطبع فارغاً أبداً.
+- **لا تُداس الهوية المخصصة القديمة**: الحقل المتغير وحده يُنشر، وكل تعديل سابق لم يصل يوماً يُشفى تلقائياً بأول حفظ.
+
+- سجل التغيير الكامل: https://github.com/spos-systems/downloads/releases/tag/v1.17.107
+- أندرويد (APK — versionCode 109): https://github.com/spos-systems/downloads/releases/download/v1.17.107/SPOS-Solah-Cloud-Android-v1.17.107.apk
+- أندرويد (Play Store AAB): https://github.com/spos-systems/downloads/releases/download/v1.17.107/SPOS-Solah-Cloud-Android-v1.17.107-PLAY-UPLOAD.aab
+- أندرويد (خريطة R8 للتشويش): https://github.com/spos-systems/downloads/releases/download/v1.17.107/SPOS-Solah-Cloud-Android-v1.17.107-mapping.txt.gz
+- ويندوز (حزمة x64): https://github.com/spos-systems/downloads/releases/download/v1.17.107/SPOS-Solah-Cloud-Windows-x64-v1.17.107.zip
+- ويندوز (المثبّت الكامل NSIS): https://github.com/spos-systems/downloads/releases/download/v1.17.107/SPOS-Solah-Cloud-Windows-Setup-x64-v1.17.107.exe
+- لينكس (AppImage): https://github.com/spos-systems/downloads/releases/download/v1.17.107/SPOS-Solah-Cloud-Linux-x64-v1.17.107.AppImage
+- لينكس (deb): https://github.com/spos-systems/downloads/releases/download/v1.17.107/SPOS-Solah-Cloud-Linux-x64-v1.17.107.deb
+- لينكس (المثبّتان الرسوسيان): https://github.com/spos-systems/downloads/releases/download/v1.17.107/SPOS-Solah-Cloud-Setup-linux-x64-v1.17.107.run · https://github.com/spos-systems/downloads/releases/download/v1.17.107/SPOS-Solah-Cloud-Setup-Offline-linux-x64-v1.17.107.run
+- البصمات: [SHA256SUMS.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.107/SHA256SUMS.txt) · [SHA256SUMS-Linux.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.107/SHA256SUMS-Linux.txt) · [SHA256SUMS-Android.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.107/SHA256SUMS-Android.txt)
+
+## v1.17.106 — سابقاً: إغلاق ثغرة دخول المنتهي اشتراكه + تحليلات التفعيل للمالك + إصلاح فيضان QR
 
 **المنتهي لا يدخل ولا يجلس بعد اليوم** — كان الدخول لا يفحص الاشتراك إطلاقاً والجلسة الحية تعمل 30 يوماً مهما انتهى الاشتراك (وثغرة أعمق: مسار استعادة الجلسة المعفى من بوابة البنية كان يسقي الأجهزة القديمة بلا قفل محلي فيعمل محلياً إلى ما لا نهاية). من الآن: حارس على الدخول (منتهٍ/موقوف/ملغى = رفض صادق وبياناتكم محفوظة) + إبطال لحظي عبر SSE تهبط معه كل أجهزة المنتهي لشاشة الدخول خلال أجزاء ثانية + أرضية بنية تضمن أن كل عابر للبوابة يملك القفل المحلي. وفي لوحة المالك:
 
@@ -107,4 +126,4 @@ sha256sum -c SHA256SUMS-Android.txt    # أندرويد
 certutil -hashfile SPOS-Solah-Cloud-Windows-x64.zip SHA256   # ويندوز
 ```
 
-> **ملاحظة الخادم (للمالك):** ⚠️ v1.17.106 يمس **الخادم نفسه** — حارس الدخول والإبطال اللحظي (إغلاق ثغرة المنتهي) + مسار `/api/owner/analytics` (تحليلات التفعيل) + رموز QR السائلة: **أعد نشر حاوية الخادم (Docker) من main في `pos-cloud-platform` بهذا الإصدار** — إغلاق الثغرة يسري فوراً على كل النسخ المثبتة (الويب والكمبيوتر والهاتف معاً) والتحليلات تظهر في لوحتك من الويب مباشرة. (v1.17.100 السابق: لا تغييرات خادمية — كل الإصلاحات في التطبيقات.)
+> **ملاحظة الخادم (للمالك):** ⚠️ v1.17.107 يمس **الخادم نفسه** — نشر هوية النشاط في AppSettings الخادمية عند حفظ لوحة المالك (قيود دفتر المزامنة لكل مفتاح) + هوية الجلسة (هاتف النشاط ومدينته): **أعد نشر حاوية الخادم (Docker) من main في `pos-cloud-platform` بهذا الإصدار** — الإصلاح يسري فوراً على كل النسخ المثبتة (الويب والكمبيوتر والهاتف معاً) حتى قبل تحديث التطبيقات، وارفع AAB (code 109) إلى Play Console. (v1.17.106 السابق: حارس دخول المنتهي + تحليلات التفعيل + رموز QR السائلة — خادمي أيضاً.)
