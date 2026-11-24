@@ -2,7 +2,7 @@
 
 مستودع التوزيع الرسمي — كل حزم المنصات تُنشر هنا وتُقدَّم تلقائياً عبر قنوات التحديث في التطبيق.
 
-## الروابط الدائمة (آخر ريليز كامل — v1.17.107)
+## الروابط الدائمة (آخر ريليز كامل — v1.17.108)
 
 | المنصة | الرابط |
 | --- | --- |
@@ -13,7 +13,26 @@
 | لينكس (حزمة x64) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Linux-x64.zip |
 | أندرويد (APK) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Android.apk |
 
-## v1.17.107 — الريليز الكامل (latest): هوية النشاط من لوحة المالك تصل إعدادات الزبون وفواتيره
+## v1.17.108 — الريليز الكامل (latest): زر حفظ بيانات النشاط لا يسبب «خطأ المزامنة» بعد اليوم
+
+**زر صادق لا يقترب من الهوية** — زر «حفظ البيانات» في تبويب «النشاط» بالإعدادات كان ظاهراً مفعلاً للجميع حتى وحقول الهوية مقفولة معطلة (التعديل عبر الدعم فقط)، وضغطة واحدة عليه كانت تكتب هوية سقوط الجلسة في قاعدة الجهاز فترفضها درع الخادم = «خطأ مزامنة» مضمون مع كل ضغطة. من الآن:
+
+- **الزر صار «حفظ العملة والتعليق» حرفياً** لمن قُفلت هويته: يحفظ رمز العملة وتعليق الفاتورة حصراً (القابلين للتحرير فعلاً) ولا يولّد أي عملية على مفاتيح الهوية إطلاقاً — فيزول خطأ المزامنة من جذره، ولافتة الدرع توضح ما يخصه الزر.
+- **حارس خادمي بعمق**: أي مفتاح هوية يصل من عميل مقفول يُسقط من نشر المتجر (يمر الباقي) — فالعملاء القدامى الذين يضغطون الحفظ لا ينشرون هوية تنافس تعديلات الإدارة.
+- **أصحاب رموز الاستثناء** (بيد الإدارة): الحقول مفتوحة والزر يحفظ الهوية كاملة كعهدتهم.
+
+- سجل التغيير الكامل: https://github.com/spos-systems/downloads/releases/tag/v1.17.108
+- أندرويد (APK — versionCode 110): https://github.com/spos-systems/downloads/releases/download/v1.17.108/SPOS-Solah-Cloud-Android-v1.17.108.apk
+- أندرويد (Play Store AAB): https://github.com/spos-systems/downloads/releases/download/v1.17.108/SPOS-Solah-Cloud-Android-v1.17.108-PLAY-UPLOAD.aab
+- أندرويد (خريطة R8 للتشويش): https://github.com/spos-systems/downloads/releases/download/v1.17.108/SPOS-Solah-Cloud-Android-v1.17.108-mapping.txt.gz
+- ويندوز (حزمة x64): https://github.com/spos-systems/downloads/releases/download/v1.17.108/SPOS-Solah-Cloud-Windows-x64-v1.17.108.zip
+- ويندوز (المثبّت الكامل NSIS): https://github.com/spos-systems/downloads/releases/download/v1.17.108/SPOS-Solah-Cloud-Windows-Setup-x64-v1.17.108.exe
+- لينكس (AppImage): https://github.com/spos-systems/downloads/releases/download/v1.17.108/SPOS-Solah-Cloud-Linux-x64-v1.17.108.AppImage
+- لينكس (deb): https://github.com/spos-systems/downloads/releases/download/v1.17.108/SPOS-Solah-Cloud-Linux-x64-v1.17.108.deb
+- لينكس (المثبّتان الرسوسيان): https://github.com/spos-systems/downloads/releases/download/v1.17.108/SPOS-Solah-Cloud-Setup-linux-x64-v1.17.108.run · https://github.com/spos-systems/downloads/releases/download/v1.17.108/SPOS-Solah-Cloud-Setup-Offline-linux-x64-v1.17.108.run
+- البصمات: [SHA256SUMS.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.108/SHA256SUMS.txt) · [SHA256SUMS-Linux.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.108/SHA256SUMS-Linux.txt) · [SHA256SUMS-Android.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.108/SHA256SUMS-Android.txt)
+
+## v1.17.107 — سابقاً: هوية النشاط من لوحة المالك تصل إعدادات الزبون وفواتيره
 
 **ما تراه في لوحتك هو ما يراه زبونك** — تعديل بيانات النشاط من لوحة المالك (الاسم/الهاتف/المدينة) كان يلامس سجل المالك الداخلي وحده ولا يصل أجهزة الزبون أبداً: التطبيق يقرأ هويته من جدول الإعدادات المُزامَنة وحقول الهوية مقفولة في واجهته أصلاً («التعديل عبر الدعم فقط») — فكان الهاتف في تبويب «النشاط» وعلى رأس الفواتير يظهر برقم المطور الافتراضي لكل زبون لم يحفظ هوية يوماً (والحفظ مقفول أصلاً). من الآن:
 
@@ -126,4 +145,4 @@ sha256sum -c SHA256SUMS-Android.txt    # أندرويد
 certutil -hashfile SPOS-Solah-Cloud-Windows-x64.zip SHA256   # ويندوز
 ```
 
-> **ملاحظة الخادم (للمالك):** ⚠️ v1.17.107 يمس **الخادم نفسه** — نشر هوية النشاط في AppSettings الخادمية عند حفظ لوحة المالك (قيود دفتر المزامنة لكل مفتاح) + هوية الجلسة (هاتف النشاط ومدينته): **أعد نشر حاوية الخادم (Docker) من main في `pos-cloud-platform` بهذا الإصدار** — الإصلاح يسري فوراً على كل النسخ المثبتة (الويب والكمبيوتر والهاتف معاً) حتى قبل تحديث التطبيقات، وارفع AAB (code 109) إلى Play Console. (v1.17.106 السابق: حارس دخول المنتهي + تحليلات التفعيل + رموز QR السائلة — خادمي أيضاً.)
+> **ملاحظة الخادم (للمالك):** ⚠️ v1.17.108 يمس **الخادم نفسه** — الحارس الخادمي الذي يسقط مفاتيح هوية النشاط (الاسم/العنوان/الهاتف/الدعم) من نشر store-wide لأي نشاط مقفول: **أعد نشر حاوية الخادم (Docker) من main في `pos-cloud-platform` بهذا الإصدار** — الحماية تسري فوراً على كل النسخ المثبتة حتى قبل تحديث التطبيقات (العملاء القدامى الذين يضغطون الحفظ لن ينشروا هوية بعد اليوم)، وارفع AAB (code 110) إلى Play Console. (v1.17.107 السابق: نشر هوية لوحة المالك في AppSettings مع قيود الدفتر + هوية الجلسة — خادمي أيضاً.)
