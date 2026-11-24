@@ -2,7 +2,7 @@
 
 مستودع التوزيع الرسمي — كل حزم المنصات تُنشر هنا وتُقدَّم تلقائياً عبر قنوات التحديث في التطبيق.
 
-## الروابط الدائمة (آخر ريليز كامل — v1.17.109)
+## الروابط الدائمة (آخر ريليز كامل — v1.17.110)
 
 | المنصة | الرابط |
 | --- | --- |
@@ -13,7 +13,28 @@
 | لينكس (حزمة x64) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Linux-x64.zip |
 | أندرويد (APK) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Android.apk |
 
-## v1.17.109 — الريليز الكامل (latest): مصمم المطبوعات المتكامل + وصل التحصيل/السداد
+## v1.17.110 — الريليز الكامل (latest): معاينة الفاتورة على الهاتف — ورقة كاملة على عرض الشاشة
+
+**مصمم المطبوعات صار يناسب هاتفك تماماً** (بلاغ المالك: «المعاينة سيئة جداً وتخرج حتى الصفحة من حدودها»):
+
+- **معاينة الفاتورة A4 كاملة الورقة على عرض شاشة الهاتف** — بعد أن كانت تنضغط في صندوق صغير يقص أغلبها، وانتهى خروج الصفحة من حدودها مهما صغرت الشاشة (الهاتف والمتصفح الضيق معاً).
+- **اضغط أي عنصر بإصبعك** — اسم مؤسستك، رقم الهاتف، الشعار، الجداول — فتفتح خياراته فوراً في ورقة سفلية أنيقة، والعنصر يظل مرئياً فوقها والتعديل يسري حياً أمام عينك.
+- **اسحب الشعار أو صورة QR بإصبعك** لتغيير حجمها بالمليمتر — السحب صار يعمل باللمس.
+- **إيصالات 80 و58مم** بشريطها الكامل الطبيعي وشريط أدوات مضغوط لا يُقص، وزر الملاءمة يعيد كل شيء بضغطة.
+- على الحاسوب والشاشات الواسعة: المصمم كما هو تماماً — التخطيط الجانبي واللوحة اللاصقة لم يتغيرا حرفياً.
+
+- سجل التغيير الكامل: https://github.com/spos-systems/downloads/releases/tag/v1.17.110
+- أندرويد (APK — versionCode 112): https://github.com/spos-systems/downloads/releases/download/v1.17.110/SPOS-Solah-Cloud-Android-v1.17.110.apk
+- أندرويد (Play Store AAB): https://github.com/spos-systems/downloads/releases/download/v1.17.110/SPOS-Solah-Cloud-Android-v1.17.110-PLAY-UPLOAD.aab
+- أندرويد (خريطة R8 للتشويش): https://github.com/spos-systems/downloads/releases/download/v1.17.110/SPOS-Solah-Cloud-Android-v1.17.110-mapping.txt.gz
+- ويندوز (حزمة x64): https://github.com/spos-systems/downloads/releases/download/v1.17.110/SPOS-Solah-Cloud-Windows-x64-v1.17.110.zip
+- ويندوز (المثبّت الكامل NSIS): https://github.com/spos-systems/downloads/releases/download/v1.17.110/SPOS-Solah-Cloud-Windows-Setup-x64-v1.17.110.exe
+- لينكس (AppImage): https://github.com/spos-systems/downloads/releases/download/v1.17.110/SPOS-Solah-Cloud-Linux-x64-v1.17.110.AppImage
+- لينكس (deb): https://github.com/spos-systems/downloads/releases/download/v1.17.110/SPOS-Solah-Cloud-Linux-x64-v1.17.110.deb
+- لينكس (المثبّتان الرسوميان): https://github.com/spos-systems/downloads/releases/download/v1.17.110/SPOS-Solah-Cloud-Setup-linux-x64-v1.17.110.run · https://github.com/spos-systems/downloads/releases/download/v1.17.110/SPOS-Solah-Cloud-Setup-Offline-linux-x64-v1.17.110.run
+- البصمات: [SHA256SUMS.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.110/SHA256SUMS.txt) · [SHA256SUMS-Linux.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.110/SHA256SUMS-Linux.txt) · [SHA256SUMS-Android.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.110/SHA256SUMS-Android.txt)
+
+## v1.17.109 — سابقاً: مصمم المطبوعات المتكامل + وصل التحصيل/السداد
 
 **تصمّم مطبوعاتك كأنك في برنامج رسم — لكن بحدود تحافظ على الأساس** (نقل تعديلات نسخة الكمبيوتر إلى كل المنصات بطلب المالك):
 
