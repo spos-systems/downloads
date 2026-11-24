@@ -2,7 +2,7 @@
 
 مستودع التوزيع الرسمي — كل حزم المنصات تُنشر هنا وتُقدَّم تلقائياً عبر قنوات التحديث في التطبيق.
 
-## الروابط الدائمة (آخر ريليز كامل — v1.17.108)
+## الروابط الدائمة (آخر ريليز كامل — v1.17.109)
 
 | المنصة | الرابط |
 | --- | --- |
@@ -13,7 +13,28 @@
 | لينكس (حزمة x64) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Linux-x64.zip |
 | أندرويد (APK) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Android.apk |
 
-## v1.17.108 — الريليز الكامل (latest): زر حفظ بيانات النشاط لا يسبب «خطأ المزامنة» بعد اليوم
+## v1.17.109 — الريليز الكامل (latest): مصمم المطبوعات المتكامل + وصل التحصيل/السداد
+
+**تصمّم مطبوعاتك كأنك في برنامج رسم — لكن بحدود تحافظ على الأساس** (نقل تعديلات نسخة الكمبيوتر إلى كل المنصات بطلب المالك):
+
+- **مصمم مطبوعات جديد في الإعدادات (تبويب الفاتورة)**: اضغط على أي عنصر في المعاينة — اسم مؤسستك، رقم الهاتف وحده، الشعار، عنوان المستند، الجداول، الخلاصة، التوقيعات — وعدّل حجمه مباشرة فوقه، أو اجعله عريضاً أو أخفِه من الورق كلياً، واسحب الشعار أو صورة QR أفقياً ليتمدد بالمليمتر — والمعاينة مطابقة لما يخرج من الطابعة حرفياً (طباعة تجريبية حقيقية).
+- **صور الوكالات**: حتى ٦ شعارات للشركات التي وكّلت عنها، لكل شعار موضعه (بجوار شعارك / تحت الترويسة / فوق التذييل) وعرضه بالمليمتر.
+- **التنسيق يسري تلقائياً على كل المطبوعات**: فاتورة A4 والإيصال الحراري (٨٠ و٥٨ مم) والسندات والتقارير وكشوف الحساب.
+- **وصل بعد كل دفعة دين**: عند تحصيل دين عميل أو سداد مورد تظهر نافذة نجاح بخيارات طباعة سند القبض/الصرف وحفظه PDF — مثل نافذة نجاح البيع تماماً.
+- أي مستند بلا تهيئة يبقى بمظهره السابق حرفياً — لا يتغير شيء حتى تعدّل بنفسك.
+
+- سجل التغيير الكامل: https://github.com/spos-systems/downloads/releases/tag/v1.17.109
+- أندرويد (APK — versionCode 111): https://github.com/spos-systems/downloads/releases/download/v1.17.109/SPOS-Solah-Cloud-Android-v1.17.109.apk
+- أندرويد (Play Store AAB): https://github.com/spos-systems/downloads/releases/download/v1.17.109/SPOS-Solah-Cloud-Android-v1.17.109-PLAY-UPLOAD.aab
+- أندرويد (خريطة R8 للتشويش): https://github.com/spos-systems/downloads/releases/download/v1.17.109/SPOS-Solah-Cloud-Android-v1.17.109-mapping.txt.gz
+- ويندوز (حزمة x64): https://github.com/spos-systems/downloads/releases/download/v1.17.109/SPOS-Solah-Cloud-Windows-x64-v1.17.109.zip
+- ويندوز (المثبّت الكامل NSIS): https://github.com/spos-systems/downloads/releases/download/v1.17.109/SPOS-Solah-Cloud-Windows-Setup-x64-v1.17.109.exe
+- لينكس (AppImage): https://github.com/spos-systems/downloads/releases/download/v1.17.109/SPOS-Solah-Cloud-Linux-x64-v1.17.109.AppImage
+- لينكس (deb): https://github.com/spos-systems/downloads/releases/download/v1.17.109/SPOS-Solah-Cloud-Linux-x64-v1.17.109.deb
+- لينكس (المثبّتان الرسوسيان): https://github.com/spos-systems/downloads/releases/download/v1.17.109/SPOS-Solah-Cloud-Setup-linux-x64-v1.17.109.run · https://github.com/spos-systems/downloads/releases/download/v1.17.109/SPOS-Solah-Cloud-Setup-Offline-linux-x64-v1.17.109.run
+- البصمات: [SHA256SUMS.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.109/SHA256SUMS.txt) · [SHA256SUMS-Linux.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.109/SHA256SUMS-Linux.txt) · [SHA256SUMS-Android.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.109/SHA256SUMS-Android.txt)
+
+## v1.17.108 — سابقاً: زر حفظ بيانات النشاط لا يسبب «خطأ المزامنة» بعد اليوم
 
 **زر صادق لا يقترب من الهوية** — زر «حفظ البيانات» في تبويب «النشاط» بالإعدادات كان ظاهراً مفعلاً للجميع حتى وحقول الهوية مقفولة معطلة (التعديل عبر الدعم فقط)، وضغطة واحدة عليه كانت تكتب هوية سقوط الجلسة في قاعدة الجهاز فترفضها درع الخادم = «خطأ مزامنة» مضمون مع كل ضغطة. من الآن:
 
