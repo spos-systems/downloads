@@ -2,7 +2,7 @@
 
 مستودع التوزيع الرسمي — كل حزم المنصات تُنشر هنا وتُقدَّم تلقائياً عبر قنوات التحديث في التطبيق.
 
-## الروابط الدائمة (آخر ريليز كامل — v1.17.110)
+## الروابط الدائمة (آخر ريليز كامل — v1.17.112)
 
 | المنصة | الرابط |
 | --- | --- |
@@ -13,15 +13,34 @@
 | لينكس (حزمة x64) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Linux-x64.zip |
 | أندرويد (APK) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Android.apk |
 
-## v1.17.111 — أندرويد متاح الآن (سطح المكتب قيد البناء في البيئة الكاملة)
+## v1.17.112 — الريليز الكامل (latest): كشف حساب صادق — الفواتير المسددة فوراً تظهر مديناً ودائناً
+
+**بلاغ المالك**: «لاحظت شي كارثي في كشف الحساب وهو انه لا يذكر الفواتير التي دفعها العميل فورا قبل ان تفعل شي تحقق لأن حسب علمي انه يجب ان تضاف حركة داين ومدين اليس كذالك. ايضا البيان يظهر دوما سداد نقدي حتى لو لم يكن نقدي».
+
+- **🧾 الفواتير المسددة فوراً في كشف الحساب**: التحقق أكد البلاغ حرفياً — الفاتورة النقدية/البطاقة المسددة لحظة البيع كانت غائبة عن الكشف تماماً. الآن كل فاتورة تظهر مديناً بكامل قيمتها يتبعها سطر «سداد فوري عند البيع» دائناً بنفس القيمة فيتوالي الرصيد صفراً ولا تختفي أي معاملة بعد اليوم — والرصيد الافتتاحي والختامي كما هما تماماً (صافي الإضافة صفر دائماً — أثبته فحص تجريبي 12/12).
+- **💳 البيان صادق مع طريقة الدفع**: لم يعد يقول «سداد نقدي» إلا للنقدي فعلاً — «سداد ببطاقة» و«سداد بتحويل بنكي» و«سداد بتطبيق مصرفي» بنصوصها — في نافذة كشف العميل وكشف التقارير والمسار الخادمي وفي المطبوع.
+- **🖨️ كشف التقارير المطبوع** يحمل طريقة الدفع لكل حركة في عمودها كاملة، والمرتجعات دائنة بما خفّضته من الدين حصراً.
+- **👥 تبويبات الموظفين على الشاشات الضيقة** (نسختا الهاتف والكمبيوتر): الأربعة في شبكة واحدة متساوية — انتهى سقوط «الأدوار والصلاحيات» خارج مكانه.
+- نفس الميزات نُقلت كاملة إلى منظومة الكمبيوتر v1.9.25 مع البحث في الديون.
+
+- سجل التغيير الكامل: https://github.com/spos-systems/downloads/releases/tag/v1.17.112
+- أندرويد (APK — versionCode 114): https://github.com/spos-systems/downloads/releases/download/v1.17.112/SPOS-Solah-Cloud-Android-v1.17.112.apk
+- أندرويد (Play Store AAB): https://github.com/spos-systems/downloads/releases/download/v1.17.112/SPOS-Solah-Cloud-Android-v1.17.112-PLAY-UPLOAD.aab
+- أندرويد (خريطة R8 للتشويش): https://github.com/spos-systems/downloads/releases/download/v1.17.112/SPOS-Solah-Cloud-Android-v1.17.112-mapping.txt.gz
+- ويندوز (حزمة x64): https://github.com/spos-systems/downloads/releases/download/v1.17.112/SPOS-Solah-Cloud-Windows-x64-v1.17.112.zip
+- ويندوز (المثبّت الكامل NSIS): https://github.com/spos-systems/downloads/releases/download/v1.17.112/SPOS-Solah-Cloud-Windows-Setup-x64-v1.17.112.exe
+- لينكس (AppImage): https://github.com/spos-systems/downloads/releases/download/v1.17.112/SPOS-Solah-Cloud-Linux-x64-v1.17.112.AppImage
+- لينكس (deb): https://github.com/spos-systems/downloads/releases/download/v1.17.112/SPOS-Solah-Cloud-Linux-x64-v1.17.112.deb
+- لينكس (المثبّتان الرسوميان): https://github.com/spos-systems/downloads/releases/download/v1.17.112/SPOS-Solah-Cloud-Setup-linux-x64-v1.17.112.run · https://github.com/spos-systems/downloads/releases/download/v1.17.112/SPOS-Solah-Cloud-Setup-Offline-linux-x64-v1.17.112.run
+- البصمات: [SHA256SUMS.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.112/SHA256SUMS.txt) · [SHA256SUMS-Linux.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.112/SHA256SUMS-Linux.txt) · [SHA256SUMS-Android.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.112/SHA256SUMS-Android.txt)
+
+## v1.17.111 — سابقاً: كاميرا الباركود على الهاتف في كل مكان + البحث في الديون + طريقة الدفع في كشف الحساب
 
 **كاميرا الباركود على الهاتف في كل مكان + البحث في الديون + طريقة الدفع في كشف الحساب**:
 
 - **📷 كاميرا الباركود على الهاتف في كل مكان** (نقل أزرار نسخة الهاتف المحلية بطلب المالك: «الكاميرا تعمل فقط في نسخة الهاتف»): زر «مسح» في نقطة البيع يفتح ماسح الكاميرا مباشرة على الهاتف (التطبيق أو المتصفح)، وزر الباركود في نافذة إضافة/تعديل المنتج يمسح ويعبّئ الحقل فوراً، وزر «ماسح خارجي» داخل شاشة الكاميرا لمن يستعمل ماسح USB/بلوتوث — والكمبيوتر الواسع كما كان على تجهيز الحقل للماسح اليدوي.
 - **🔍 البحث عن العميل في الديون**: مربع بحث جديد بالاسم أو رقم الهاتف — يظهر العميل فوراً بين المستحقات، ويبحث كذلك في الموردين والسندات والأرصدة الدائنة، وزر «تقرير» يطبع ما تراه أمامك حرفياً.
 - **💳 طريقة الدفع في كشف الحساب**: كل حركة تعرض طريقة دفعها (نقدي/بطاقة/تحويل/آجل) — شارة ملونة على الشاشة وعمود كامل في الكشف المطبوع، لكشوف العملاء والموردين وكشف الحساب التفصيلي معاً.
-
-> ملاحظة: حزم سطح المكتب (ويندوز/لينكس) لهذا الإصدار تُبنى في البيئة الكاملة وتُلحق بالريليز الكامل هنا بنمط الإصدارات السابقة — والروابط الدائمة أعلاه تقدّم v1.17.110 الكاملة حتى اكتمالها. ميزات هذا الإصدار تعمل على الويب من الخادم بعد تحديثه (git pull + docker compose up -d --build).
 
 - سجل التغيير الكامل: https://github.com/spos-systems/downloads/releases/tag/v1.17.111
 - أندرويد (APK — versionCode 113): https://github.com/spos-systems/downloads/releases/download/v1.17.111/SPOS-Solah-Cloud-Android-v1.17.111.apk
