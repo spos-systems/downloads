@@ -13,6 +13,22 @@
 | لينكس (حزمة x64) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Linux-x64.zip |
 | أندرويد (APK) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Android.apk |
 
+## v1.17.111 — أندرويد متاح الآن (سطح المكتب قيد البناء في البيئة الكاملة)
+
+**كاميرا الباركود على الهاتف في كل مكان + البحث في الديون + طريقة الدفع في كشف الحساب**:
+
+- **📷 كاميرا الباركود على الهاتف في كل مكان** (نقل أزرار نسخة الهاتف المحلية بطلب المالك: «الكاميرا تعمل فقط في نسخة الهاتف»): زر «مسح» في نقطة البيع يفتح ماسح الكاميرا مباشرة على الهاتف (التطبيق أو المتصفح)، وزر الباركود في نافذة إضافة/تعديل المنتج يمسح ويعبّئ الحقل فوراً، وزر «ماسح خارجي» داخل شاشة الكاميرا لمن يستعمل ماسح USB/بلوتوث — والكمبيوتر الواسع كما كان على تجهيز الحقل للماسح اليدوي.
+- **🔍 البحث عن العميل في الديون**: مربع بحث جديد بالاسم أو رقم الهاتف — يظهر العميل فوراً بين المستحقات، ويبحث كذلك في الموردين والسندات والأرصدة الدائنة، وزر «تقرير» يطبع ما تراه أمامك حرفياً.
+- **💳 طريقة الدفع في كشف الحساب**: كل حركة تعرض طريقة دفعها (نقدي/بطاقة/تحويل/آجل) — شارة ملونة على الشاشة وعمود كامل في الكشف المطبوع، لكشوف العملاء والموردين وكشف الحساب التفصيلي معاً.
+
+> ملاحظة: حزم سطح المكتب (ويندوز/لينكس) لهذا الإصدار تُبنى في البيئة الكاملة وتُلحق بالريليز الكامل هنا بنمط الإصدارات السابقة — والروابط الدائمة أعلاه تقدّم v1.17.110 الكاملة حتى اكتمالها. ميزات هذا الإصدار تعمل على الويب من الخادم بعد تحديثه (git pull + docker compose up -d --build).
+
+- سجل التغيير الكامل: https://github.com/spos-systems/pos-cloud-platform/releases/tag/v1.17.111
+- أندرويد (APK — versionCode 113): https://github.com/spos-systems/pos-cloud-platform/releases/download/v1.17.111/SPOS-Solah-Cloud-Android-v1.17.111.apk
+- أندرويد (Play Store AAB): https://github.com/spos-systems/pos-cloud-platform/releases/download/v1.17.111/SPOS-Solah-Cloud-Android-v1.17.111-PLAY-UPLOAD.aab
+- أندرويد (خريطة R8 للتشويش): https://github.com/spos-systems/pos-cloud-platform/releases/download/v1.17.111/SPOS-Solah-Cloud-Android-v1.17.111-mapping.txt.gz
+- البصمات: [SHA256SUMS-Android.txt](https://github.com/spos-systems/pos-cloud-platform/releases/download/v1.17.111/SHA256SUMS-Android.txt)
+
 ## v1.17.110 — الريليز الكامل (latest): معاينة الفاتورة على الهاتف — ورقة كاملة على عرض الشاشة
 
 **مصمم المطبوعات صار يناسب هاتفك تماماً** (بلاغ المالك: «المعاينة سيئة جداً وتخرج حتى الصفحة من حدودها»):
