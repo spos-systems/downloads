@@ -23,11 +23,11 @@
 
 > ملاحظة: حزم سطح المكتب (ويندوز/لينكس) لهذا الإصدار تُبنى في البيئة الكاملة وتُلحق بالريليز الكامل هنا بنمط الإصدارات السابقة — والروابط الدائمة أعلاه تقدّم v1.17.110 الكاملة حتى اكتمالها. ميزات هذا الإصدار تعمل على الويب من الخادم بعد تحديثه (git pull + docker compose up -d --build).
 
-- سجل التغيير الكامل: https://github.com/spos-systems/pos-cloud-platform/releases/tag/v1.17.111
-- أندرويد (APK — versionCode 113): https://github.com/spos-systems/pos-cloud-platform/releases/download/v1.17.111/SPOS-Solah-Cloud-Android-v1.17.111.apk
-- أندرويد (Play Store AAB): https://github.com/spos-systems/pos-cloud-platform/releases/download/v1.17.111/SPOS-Solah-Cloud-Android-v1.17.111-PLAY-UPLOAD.aab
-- أندرويد (خريطة R8 للتشويش): https://github.com/spos-systems/pos-cloud-platform/releases/download/v1.17.111/SPOS-Solah-Cloud-Android-v1.17.111-mapping.txt.gz
-- البصمات: [SHA256SUMS-Android.txt](https://github.com/spos-systems/pos-cloud-platform/releases/download/v1.17.111/SHA256SUMS-Android.txt)
+- سجل التغيير الكامل: https://github.com/spos-systems/downloads/releases/tag/v1.17.111
+- أندرويد (APK — versionCode 113): https://github.com/spos-systems/downloads/releases/download/v1.17.111/SPOS-Solah-Cloud-Android-v1.17.111.apk
+- أندرويد (Play Store AAB): https://github.com/spos-systems/downloads/releases/download/v1.17.111/SPOS-Solah-Cloud-Android-v1.17.111-PLAY-UPLOAD.aab
+- أندرويد (خريطة R8 للتشويش): https://github.com/spos-systems/downloads/releases/download/v1.17.111/SPOS-Solah-Cloud-Android-v1.17.111-mapping.txt.gz
+- البصمات: [SHA256SUMS-Android.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.111/SHA256SUMS-Android.txt)
 
 ## v1.17.110 — الريليز الكامل (latest): معاينة الفاتورة على الهاتف — ورقة كاملة على عرض الشاشة
 
