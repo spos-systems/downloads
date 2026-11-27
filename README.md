@@ -2,7 +2,7 @@
 
 مستودع التوزيع الرسمي — كل حزم المنصات تُنشر هنا وتُقدَّم تلقائياً عبر قنوات التحديث في التطبيق.
 
-## الروابط الدائمة (آخر ريليز كامل — v1.17.112)
+## الروابط الدائمة (آخر ريليز كامل — v1.17.113)
 
 | المنصة | الرابط |
 | --- | --- |
@@ -13,7 +13,27 @@
 | لينكس (حزمة x64) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Linux-x64.zip |
 | أندرويد (APK) | https://github.com/spos-systems/downloads/releases/latest/download/SPOS-Solah-Cloud-Android.apk |
 
-## v1.17.112 — الريليز الكامل (latest): كشف حساب صادق — الفواتير المسددة فوراً تظهر مديناً ودائناً
+## v1.17.113 — الريليز الكامل (latest): صفحة تقارير تعمل من أول لمسة + توليد بيانات لا ينكسر بالمفتاح الأجنبي
+
+**بلاغ المالك**: «تعذر التوليد insert or update on table financialtransactions violates fk_financialtransactions_users — اي عند توليد البيانات التجريبيه. ايضا في تطبيق الهاتف والكمبيوتر سواء السحابي او المحلي هناك مشكله قاتله في صفحه التقارير اولا زر التوليد لايعمل من اول مره ثانيا لو فتحت الكونبو واخترت عنيل ثم اردت اختيار الاخر فان الكنبو لايفتح وهناك قلتش مشابه في نوافذ التواريخ».
+
+- **⚡ زر «عرض التقرير» يعمل من أول ضغطة دائماً** — كانت النقرة الأولى تُلتهم بصمت فلا يحدث شيء حتى تضغط ثانية، والآن الفلاتر ثم التوليد مباشرة.
+- **🎯 الكومبو وبطاقة التاريخ لا يعلقان بعد الإغلاق السريع**: لم يعد المنتقي «يموت» — كانت إعادة الفتح خلال لحظة من الإغلاق تولّد ورقة ميتة فوق الشاشة لا تستجيب ولا تُغلق (الطور المعلق في محرك حركة الإغلاق عولج من جذره)، واختيار تاريخ من البطاقة يغلقها فوراً كما يُتوقع.
+- **🛡️ توليد البيانات التجريبية لم يعد ينكسر بالمفتاح الأجنبي** (fk_financialtransactions_users) على النسخة الشبكية — صاحب المصروفات والإيداعات صار مستخدماً حقيقياً من الطاقم القائم مهما كانت معرفات قاعدتك.
+- نفس الإصلاحات في تطبيق الهاتف v1.112 ومنظومة الكمبيوتر v1.9.28.
+
+- سجل التغيير الكامل: https://github.com/spos-systems/downloads/releases/tag/v1.17.113
+- أندرويد (APK — versionCode 115): https://github.com/spos-systems/downloads/releases/download/v1.17.113/SPOS-Solah-Cloud-Android-v1.17.113.apk
+- أندرويد (Play Store AAB): https://github.com/spos-systems/downloads/releases/download/v1.17.113/SPOS-Solah-Cloud-Android-v1.17.113-PLAY-UPLOAD.aab
+- أندرويد (خريطة R8 للتشويش): https://github.com/spos-systems/downloads/releases/download/v1.17.113/SPOS-Solah-Cloud-Android-v1.17.113-mapping.txt.gz
+- ويندوز (حزمة x64): https://github.com/spos-systems/downloads/releases/download/v1.17.113/SPOS-Solah-Cloud-Windows-x64-v1.17.113.zip
+- ويندوز (المثبّت الكامل NSIS): https://github.com/spos-systems/downloads/releases/download/v1.17.113/SPOS-Solah-Cloud-Windows-Setup-x64-v1.17.113.exe
+- لينكس (AppImage): https://github.com/spos-systems/downloads/releases/download/v1.17.113/SPOS-Solah-Cloud-Linux-x64-v1.17.113.AppImage
+- لينكس (deb): https://github.com/spos-systems/downloads/releases/download/v1.17.113/SPOS-Solah-Cloud-Linux-x64-v1.17.113.deb
+- لينكس (المثبّتان الرسوميان): https://github.com/spos-systems/downloads/releases/download/v1.17.113/SPOS-Solah-Cloud-Setup-linux-x64-v1.17.113.run · https://github.com/spos-systems/downloads/releases/download/v1.17.113/SPOS-Solah-Cloud-Setup-Offline-linux-x64-v1.17.113.run
+- البصمات: [SHA256SUMS.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.113/SHA256SUMS.txt) · [SHA256SUMS-Linux.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.113/SHA256SUMS-Linux.txt) · [SHA256SUMS-Android.txt](https://github.com/spos-systems/downloads/releases/download/v1.17.113/SHA256SUMS-Android.txt)
+
+## v1.17.112 — سابقاً: كشف حساب صادق — الفواتير المسددة فوراً تظهر مديناً ودائناً
 
 **بلاغ المالك**: «لاحظت شي كارثي في كشف الحساب وهو انه لا يذكر الفواتير التي دفعها العميل فورا قبل ان تفعل شي تحقق لأن حسب علمي انه يجب ان تضاف حركة داين ومدين اليس كذالك. ايضا البيان يظهر دوما سداد نقدي حتى لو لم يكن نقدي».
 
